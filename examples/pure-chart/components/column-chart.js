@@ -164,7 +164,6 @@ export default class ColumnChart extends Component {
                   drawXAxisLabels(this.state.sortedData[0].data, this.state.gap, this.props.labelColor, this.props.showEvenNumberXaxisLabel)}
               </View>
             </View>
-            {this.drawTooltip(this.state.selectedIndex)}
           </ScrollView>
         </View>
       </View>
