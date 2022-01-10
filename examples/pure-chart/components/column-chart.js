@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { View, StyleSheet, Animated, ScrollView, Easing, Text } from 'react-native'
+import { View, StyleSheet, Animated, ScrollView, Easing, Text, Dimensions } from 'react-native'
 import ColumnChartItem from './column-chart-item'
 import {initData, drawYAxis, drawYAxisLabels, drawGuideLine, numberWithCommas, drawXAxis, drawXAxisLabels} from '../common'
 
@@ -192,7 +192,8 @@ const styles = StyleSheet.create({
   chartView: {
     flexDirection: 'row',
     alignItems: 'flex-end',
-    height: '100%'
+    height: '100%',
+    width:Dimensions.get('window').width * 0.7
   },
   tooltipWrapper: {
     position: 'absolute',
